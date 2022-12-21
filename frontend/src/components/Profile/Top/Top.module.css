@@ -1,0 +1,48 @@
+.container {
+  text-align: center;
+}
+
+.following-btn {
+  width: 100px;
+  padding: 5px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.following-btn:hover {
+  background-color: rgb(198, 196, 196);
+}
+
+.follow-btn {
+  width: 100px;
+  padding: 5px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  background-color: #1877f2;
+  color: white;
+}
+.follow-btn:hover {
+  background-color: #245fad;
+}
+
+.following-btn:active,
+.follow-btn:active {
+  transform: translateY(-2px);
+}
+
+.name {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7px;
+}

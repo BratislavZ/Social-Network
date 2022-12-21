@@ -1,0 +1,103 @@
+.container {
+  border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: white;
+  position: relative;
+  min-height: 280px;
+}
+
+.show-more {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  padding: 5px 10px;
+  color: rgb(92, 91, 91);
+  background-color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+}
+.show-more:hover {
+  text-decoration: underline 2px solid;
+  background-color: rgb(220, 219, 219);
+  color: rgb(26, 26, 26);
+}
+.show-more:active {
+  transform: translateY(-2px);
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 13px;
+}
+
+.no-followers {
+  height: 20vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: rgb(148, 148, 148);
+}
+
+.followers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.item {
+  background-color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.img:hover {
+  filter: brightness(1.08);
+}
+
+.name {
+  font-size: 12px;
+  padding: 8px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+.name:hover {
+  text-decoration: underline 2px;
+}
+
+.name:active,
+.img:active {
+  transform: translateY(-2px);
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin: 25px 0;
+}
+
+.spinner {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

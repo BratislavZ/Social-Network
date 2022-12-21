@@ -1,0 +1,48 @@
+.img-container {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 8px;
+  background-color: rgb(247, 247, 247);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  max-height: 300px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.img:hover {
+  filter: brightness(1.04);
+}
+
+.cancel {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  cursor: pointer;
+  background-color: rgb(226, 25, 25);
+  color: white;
+  border-radius: 50%;
+  padding: 2px;
+  z-index: 1;
+}
+.cancel:hover {
+  background-color: rgb(154, 85, 85);
+}
+.cancel:active {
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 760px) {
+  .img-container {
+    min-width: 0;
+    max-width: 650px;
+    margin: 20px auto;
+  }
+}

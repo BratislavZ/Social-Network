@@ -1,0 +1,64 @@
+.container {
+  min-height: 230px;
+  padding: 25px 20px;
+  position: relative;
+  max-width: 500px;
+}
+
+.close-icon {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  border-radius: 50%;
+  background-color: rgb(199, 197, 197);
+  cursor: pointer;
+  padding: 3px;
+}
+
+.close-icon:active {
+  transform: translateY(-2px);
+}
+.close-icon:hover {
+  background-color: rgb(180, 180, 180);
+}
+
+.question {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.delete-btn {
+  width: 100px;
+  background-color: #1877f2;
+}
+
+.cancel-btn {
+  width: 100px;
+  border: 1px solid #1877f2;
+}
+
+.delete-btn:active,
+.cancel-btn:active {
+  transform: translateY(-2px);
+}
+
+.error {
+  color: red;
+  margin-top: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 510px) {
+  .question {
+    font-size: 30px;
+  }
+}

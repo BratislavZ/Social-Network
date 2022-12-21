@@ -1,0 +1,104 @@
+.container {
+  height: max-content;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 25px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.input-container label {
+  font-size: 12px;
+  margin-bottom: 3px;
+  color: #88898a;
+}
+
+.input-container input {
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  font-size: 18px;
+  padding: 0 20px;
+}
+
+.container input:focus {
+  outline: none;
+}
+
+.login-btn {
+  height: 50px;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: none;
+  background-color: #1775ee;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.register-container {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.question {
+  color: #88898a;
+}
+
+.register {
+  color: #1775ee;
+}
+.register:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.register:active,
+.login-btn:active {
+  transform: translateY(-2px);
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: none;
+  background-color: #1775ee;
+}
+
+@media screen and (max-width: 440px) {
+  .container {
+    padding: 30px 15px;
+  }
+}

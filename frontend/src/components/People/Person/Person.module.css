@@ -1,0 +1,83 @@
+.card {
+  background-color: white;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgb(159, 157, 157);
+  margin-bottom: 1rem;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.card img:hover {
+  filter: brightness(1.08);
+}
+
+.username {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+}
+.username:hover {
+  text-decoration: underline 2px;
+}
+.username:active {
+  transform: translateY(-2px);
+}
+
+.numOfFollowers {
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+.numOfFollowers:hover {
+  text-decoration: underline;
+}
+.numOfFollowers:active {
+  transform: translateY(-2px);
+}
+
+.btn {
+  background-color: #1877f2;
+  width: 80px;
+}
+.btn:active {
+  transform: translateY(-2px);
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 675px) {
+  .btn {
+    width: 120px;
+  }
+
+  .username {
+    font-size: 20px;
+  }
+
+  .numOfFollowers {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .card img {
+    width: 250px;
+    height: 250px;
+  }
+}

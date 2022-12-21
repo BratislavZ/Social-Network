@@ -1,0 +1,54 @@
+.card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgb(159, 157, 157);
+  margin-bottom: 1rem;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  position: relative;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+
+.title:hover {
+  text-decoration: underline 2px;
+}
+
+.company-name {
+  margin-bottom: 7px;
+}
+
+.location {
+  margin-bottom: 10px;
+}
+
+.salary {
+  background-color: rgb(239, 239, 239);
+  width: fit-content;
+  font-weight: 650;
+  padding: 5px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  margin-bottom: 30px;
+}
+
+.date {
+  font-size: 13px;
+}
+
+.btn {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+}

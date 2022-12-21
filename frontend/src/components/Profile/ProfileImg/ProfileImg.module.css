@@ -1,0 +1,36 @@
+.profile-image-container {
+  width: fit-content;
+  margin: auto;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  right: 0;
+}
+
+.user-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: auto;
+  border: 3px solid white;
+  background-color: white;
+  cursor: pointer;
+}
+
+.camera-icon-profile {
+  position: absolute;
+  bottom: 2px;
+  right: 8px;
+  z-index: 1;
+  border-radius: 50%;
+  padding: 7px;
+  background-color: rgb(222, 222, 222);
+  cursor: pointer;
+}
+.camera-icon-profile:hover {
+  background-color: rgb(207, 206, 206);
+}
+.camera-icon-profile:active {
+  transform: translateY(-2px);
+}

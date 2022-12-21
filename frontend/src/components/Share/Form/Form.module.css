@@ -1,0 +1,57 @@
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.options {
+  display: flex;
+  margin-left: 20px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 3px;
+}
+.option:active {
+  transform: translateY(-2px);
+}
+.option:hover {
+  background-color: rgb(220, 219, 219);
+}
+
+.icon {
+  font-size: 18px;
+  margin-right: 3px;
+}
+
+.option span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.button {
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: #1877f2;
+  font-weight: 500;
+  margin-right: 20px;
+  cursor: pointer;
+  color: white;
+  width: 70px;
+}
+.button:active {
+  transform: translateY(-2px);
+}
+.button:hover {
+  background-color: #4687dc;
+}
+
+.spinner {
+  margin-right: 30px;
+}

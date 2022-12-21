@@ -1,0 +1,93 @@
+.form {
+  width: 100%;
+  padding: 20px 10px;
+  min-height: 300px;
+  text-align: center;
+  min-width: 500px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close-icon {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  border-radius: 50%;
+  background-color: rgb(199, 197, 197);
+  cursor: pointer;
+  padding: 3px;
+}
+.close-icon:active {
+  transform: translateY(-2px);
+}
+.close-icon:hover {
+  background-color: rgb(180, 180, 180);
+}
+
+.add-image {
+  height: 300px;
+  cursor: pointer;
+  border: 3px dashed rgb(115, 115, 115);
+  color: rgb(115, 115, 115);
+  max-width: 90%;
+  margin: 25px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.spinner {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  max-width: 80%;
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.buttons button {
+  width: 100px;
+}
+.buttons button:active {
+  transform: translateY(4px);
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.success {
+  color: rgb(75, 166, 77);
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 760px) {
+  .form {
+    min-width: 400px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .form {
+    min-width: 335px;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+}

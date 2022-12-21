@@ -1,0 +1,52 @@
+.spinner {
+  flex: 7.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.error {
+  flex: 7.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.right {
+  flex: 7.5;
+}
+
+.main {
+  margin: 0 auto;
+  display: flex;
+  max-width: 1200px;
+  position: relative;
+}
+
+.profile-info {
+  flex: 3;
+  text-align: left;
+  position: sticky;
+  top: 50px;
+  height: fit-content;
+}
+
+.feed {
+  flex: 4.5;
+}
+
+@media screen and (max-width: 1075px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .profile-info {
+    position: relative;
+    top: 0;
+  }
+}

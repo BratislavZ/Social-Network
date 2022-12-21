@@ -1,0 +1,46 @@
+.container {
+  flex: 1.5;
+  height: calc(100vh - 50px);
+  position: sticky;
+  top: 50px;
+  background-color: rgb(241, 241, 241);
+}
+
+.list {
+  padding: 15px 0;
+  margin: 0;
+  list-style: none;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 3px 10px 3px 10px;
+  min-height: 50px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.list li:hover {
+  text-decoration: underline 2px;
+  background-color: rgb(220, 219, 219);
+}
+.list li:active {
+  transform: translateY(-2px);
+}
+
+.icon {
+  margin-right: 15px;
+}
+
+.sidebarFriendList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    display: none;
+  }
+}

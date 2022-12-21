@@ -1,0 +1,52 @@
+.container {
+  border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  margin-bottom: 30px;
+  padding: 15px;
+  position: relative;
+  background-color: white;
+}
+
+.edit-icon {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  cursor: pointer;
+  color: rgb(92, 91, 91);
+  border-radius: 8px;
+  padding: 5px;
+}
+.edit-icon:hover {
+  background-color: rgb(220, 219, 219);
+  color: rgb(26, 26, 26);
+}
+.edit-icon:active {
+  transform: translateY(-2px);
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 13px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.info-item {
+  font-size: 18px;
+}
+
+.key {
+  font-weight: 500;
+  margin-right: 15px;
+  color: #555;
+}
+
+.value {
+  font-weight: 300;
+}
