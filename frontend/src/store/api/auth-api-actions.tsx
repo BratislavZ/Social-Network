@@ -43,7 +43,6 @@ export const fetchLogin = (loginData: Auth) => {
 
     try {
       const data = await fetchRequest();
-      console.log(data);
       setCookie("jwt", data.token, 3 * 60 * 60 * 1000);
       setCookie("userLogged", JSON.stringify(data.user), 3 * 60 * 60 * 1000);
       dispatch(uiActions.isLoggingIn({ isFetching: false }));

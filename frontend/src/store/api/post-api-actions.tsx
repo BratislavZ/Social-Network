@@ -27,7 +27,6 @@ export const sendNewPost = (postData: FormData) => {
 
     try {
       const data = await fetchRequest();
-      console.log("new post:", data);
       dispatch(feedActions.createPost(data.post));
       dispatch(uiActions.isSendingPost({ isFetching: false }));
     } catch (error) {

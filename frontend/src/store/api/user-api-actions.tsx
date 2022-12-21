@@ -52,7 +52,11 @@ export const sendUserInfo = (userInfo: UserInfo) => {
           successMsg: data.message,
         })
       );
-      console.log(data);
+      dispatch(
+        feedActions.changeUsername({
+          username: data.user.username,
+        })
+      );
       dispatch(userActions.loadUser(data.user));
       dispatch(profileActions.loadProfile(data.user));
     } catch (error) {

@@ -59,6 +59,18 @@ const feedSlice = createSlice({
       });
       state.posts = posts;
     },
+    changeUsername(state, action: PayloadAction<{ username: string }>) {
+      const posts = state.posts.map((post) => {
+        return {
+          ...post,
+          creator: {
+            ...post.creator,
+            username: action.payload.username,
+          },
+        };
+      });
+      state.posts = posts;
+    },
     cleanFeed(state) {
       state.posts = [];
     },
