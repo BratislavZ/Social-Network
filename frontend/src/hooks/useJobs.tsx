@@ -60,7 +60,7 @@ const useJobs = () => {
 
     const fetchRequest = () => {
       fetch(
-        `http://api.adzuna.com/v1/api/jobs/gb/search/${pageNumber}?app_id=${process.env.REACT_APP_JOB_API_ID}&app_key=${process.env.REACT_APP_JOB_API_KEY}&results_per_page=10`,
+        `https://api.adzuna.com/v1/api/jobs/gb/search/${pageNumber}?app_id=${process.env.REACT_APP_JOB_API_ID}&app_key=${process.env.REACT_APP_JOB_API_KEY}&results_per_page=10`,
         { signal }
       )
         .then((res) => {
